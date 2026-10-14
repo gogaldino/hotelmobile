@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Configurando texto do título para mobile */
+h1{
+    font-size: 22px;
+    color: #2563eb;
+    text-align: center;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #cdb5e1;
+    padding-bottom: 10px;
+}
+
+div{
+    background-color: #ffff;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    padding: 16px;
+    max-width: 800px;
+    margin: auto;
+    /* Organização vertical mobile */
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+img{
+    /* Não estoura a largura do celular */
+    max-width: 100%;
+    margin: auto;
+    height: auto;
+    display: block;
+    border-radius: 6px;
+}
+
+div h2{
+    font-size: 18px;
+    color: #004cff;
+}
+
+div p{
+    font-size: 18px;
+    color: #ff00ea;
+    margin-bottom: 14px;
+}
+
+button:hover{
+    background-color: #1d4ed8;
+}
+
+/* Parte de desktop */
+/* media - configuração para determinado tamanho de tela */
+@media (min-width: 768px){
+    body{
+        padding: 40px;
+    }
+    h1{
+        font-size: 32px;
+        color: rebeccapurple;
+    }
+    #card{
+        flex-direction: row;
+        align-items: center;
+        padding: 24px;
+    }
+    #card img{
+        width: 40%;
+    }
+}
+
